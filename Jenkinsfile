@@ -11,14 +11,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat "C:\\Users\\Sharvil\\AppData\\Local\\Programs\\Python\\Python314\\python.exe"
+                bat 'python app.py'
             }
         }
 
         stage('Test') {
             steps {
-                bat "C:\Users\Sharvil\AppData\Local\Programs\Python\Python314\python.exe"
-            }
+                bat 'python test.py'
             }
         }
     }
